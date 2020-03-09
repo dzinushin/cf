@@ -1,5 +1,18 @@
 # BOSH
 
+https://bosh.io/docs/
+
+bosh concepts
+
+- Director
+- Releases
+- Steamcells
+- CPI (Cloud Provider Interface)
+
+- Environments
+- Deployments
+- Instances
+
 ```
 bosh env
 bosh deployments --column=name
