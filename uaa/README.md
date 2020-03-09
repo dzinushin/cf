@@ -25,6 +25,7 @@ $ uaac [cmd] -h
 # uaac target uaa.fin.cian.ru [--skip-ssl-validation]
 # uaac token get admin -s <admin password>
 # uaac contexts
+# uaac info
 ```
 
 #### targets
@@ -60,6 +61,8 @@ $ uaac users -a username | grep username # get name of all users
 $ uaac user [
       get [name]
       add [name]
+      update [name]
+      delete [name]
 ]
 $ uaac password set [name] [-p <password>]
 
@@ -77,6 +80,8 @@ $ uaac user add [id] -p [passwd] --emails [user-email]
         delete [id]
         secret set [id] 
    ]
+# uaac client update grafana --authorized_grant_types="refresh_token authorization_code"   
+# uaac client update actuator-metrics-client --authorities “actuator.read, scim.read, scim.write, cloud_controller.admin”   
 ```
 
 #### groups
