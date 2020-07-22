@@ -1,6 +1,6 @@
 https://github.com/cloudfoundry-incubator/uaa-cli
 
-
+```
 uaa target https://uaa.fin.cian.ru
 
 uaa get-client-credentials-token admin -s PWD
@@ -16,3 +16,4 @@ uaa list-users
 uaa list-users | jq -r '.[].userName'
 
 uaa list-groups
+```
