@@ -1,0 +1,6 @@
+---
+applications:
+  - name: demo1
+    memory: 1G
+    services:
+      - mongo-demo1

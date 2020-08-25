@@ -1,0 +1,13 @@
+---
+applications:
+  - name: demo3
+    stack: cflinuxfs3
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git#v4.32.1
+    memory: 1G
+    services:
+      - mongo-demo3
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }}'
+      JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+      SPRING_PROFILES_ACTIVE: 'cloud'

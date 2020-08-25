@@ -1,0 +1,8 @@
+---
+applications:
+  - name: demo2
+    memory: 1G
+    services:
+      - mongo-demo2
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }}'
