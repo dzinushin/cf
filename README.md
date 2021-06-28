@@ -19,6 +19,7 @@ cf disable-service-access
 ## space roles 
 
 ```shell
+cf space-users
 cf set-space-role dzinushin cian ote SpaceDeveloper
 ```
 
